@@ -1,0 +1,22 @@
+version '1.0-SNAPSHOT'
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    apply plugin: 'java'
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    ext {
+        vertxVersion = '3.9.4'
+    }
+
+    dependencies {
+        compile group: 'io.vertx', name: 'vertx-core', version: "$vertxVersion"
+    }
+}

@@ -1,0 +1,4 @@
+rootProject.name = 'Lect10_Vertx'
+include 'Claster'
+include 'MainComponents'
+
